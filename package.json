@@ -1,0 +1,23 @@
+{
+  "name": "websocket-node_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/h2jeong/websocket-node_server.git",
+  "author": "Zoe <heejeong.cho@stryx.co.kr>",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0",
+    "ws": "^7.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "nodemon ./index.js"
+  }
+}
