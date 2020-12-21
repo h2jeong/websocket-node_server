@@ -6,12 +6,14 @@ const http = require('http');
 const server = http.createServer(app);
 const config = require("./config/keys");
 const mongoose = require('mongoose');
+
 mongoose.connect(config.mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
     useCreateIndex: true
-})
+}).then(() => console.log('Successfully connected to mongodb'))
+.catch(e => console.error(e))
 
 const port = process.env.PORT || '3001';
 
